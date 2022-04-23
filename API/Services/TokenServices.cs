@@ -17,7 +17,6 @@ namespace API.Services
         private readonly SymmetricSecurityKey _key;
         public TokenServices(IConfiguration config)
         {
-            
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
         }
 
